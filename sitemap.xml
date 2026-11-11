@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+
+  <!-- ================================================================== -->
+  <!-- Main Portal URL (Dr. Lekhram Gurjar - M.R. Homeopathic Hospital)    -->
+  <!-- ================================================================== -->
+  <url>
+    <loc>https://drlekhramgurjar.com/</loc>
+    <lastmod>2026-11-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+
+    <!-- Banner & Doctor Identity Images -->
+    <image:image>
+      <image:loc>https://drlekhramgurjar.com/ChatGPT%20Image%20Sep%2017,%202026,%2012_10_25%20AM.png</image:loc>
+      <image:title>Dr. Lekhram Gurjar - M.R. Homeopathic Research Hospital Banner</image:title>
+      <image:caption>Official clinical banner of Dr. Lekhram Gurjar at Sanganer, Jaipur</image:caption>
+    </image:image>
+
+    <image:image>
+      <image:loc>https://drlekhramgurjar.com/ChatGPT%20Image%20Sep%2017,%202026,%2012_10_58%20AM.png</image:loc>
+      <image:title>Dr. Lekhram Gurjar Homeopathy Consultation Desk</image:title>
+      <image:caption>Consultant Homeopathic Physician Dr. Lekhram Gurjar (BHMS)</image:caption>
+    </image:image>
+
+    <!-- Clinical Specialization Infographic Assets -->
+    <image:image>
+      <image:loc>https://drlekhramgurjar.com/Kidney%20Stones_%20Clinical%20Anatomy%20Close-Up.png</image:loc>
+      <image:title>Renal Calculi (Kidney Stones) Clinical Anatomy</image:title>
+      <image:caption>Constitutional homeopathic management and natural stone clearance</image:caption>
+    </image:image>
+
+    <image:image>
+      <image:loc>https://drlekhramgurjar.com/Dermatology%20and%20Skin%20Allergies%20Guide.png</image:loc>
+      <image:title>Dermatology and Skin Allergies Clinical Guide</image:title>
+      <image:caption>Homeopathic treatment for eczema, psoriasis, fungal infections, and skin allergies</image:caption>
+    </image:image>
+
+    <image:image>
+      <image:loc>https://drlekhramgurjar.com/Gastrointestinal%20Disorders%20Infographic.png</image:loc>
+      <image:title>Gastrointestinal and Digestive Health Disorders</image:title>
+      <image:caption>Individualized evaluation for acidity, gastritis, ulcers, and IBS</image:caption>
+    </image:image>
+
+    <image:image>
+      <image:loc>https://drlekhramgurjar.com/Joint%20Pain%20and%20Symptom%20Guide.png</image:loc>
+      <image:title>Joint and Musculoskeletal Pains Symptom Guide</image:title>
+      <image:caption>Therapeutics for arthritis, joint stiffness, knee, shoulder, and back pain</image:caption>
+    </image:image>
+
+    <image:image>
+      <image:loc>https://drlekhramgurjar.com/Respiratory%20Allergies%20%26%20Asthma%20Infographic.png</image:loc>
+      <image:title>Respiratory Allergies and Asthma Clinical Guide</image:title>
+      <image:caption>Evaluation for allergic rhinitis, bronchitis, chronic cough, and asthma</image:caption>
+    </image:image>
+
+    <!-- Clinic Introduction Video -->
+    <video:video>
+      <video:thumbnail_loc>https://drlekhramgurjar.com/ChatGPT%20Image%20Sep%2017,%202026,%2012_10_58%20AM.png</video:thumbnail_loc>
+      <video:title>Meet Dr. Lekhram Gurjar: His Philosophy and Clinical Care</video:title>
+      <video:description>Dr. Lekhram Gurjar explains how classical homeopathy tackles deep-seated pathology, dietary interactions, and individualized treatments at M.R. Homeopathic Research Hospital, Sanganer, Jaipur.</video:description>
+      <video:content_loc>https://drlekhramgurjar.com/api/media/stream/intro-video.mp4</video:content_loc>
+      <video:player_loc>https://drlekhramgurjar.com/#intro-video-section</video:player_loc>
+      <video:duration>180</video:duration>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:uploader info="https://www.instagram.com/drlekhramgurjar/">Dr. Lekhram Gurjar</video:uploader>
+    </video:video>
+  </url>
+
+  <!-- ================================================================== -->
+  <!-- Main Navigational Sections (Anchor Endpoints for Deep Indexing)    -->
+  <!-- ================================================================== -->
+  <url>
+    <loc>https://drlekhramgurjar.com/#about</loc>
+    <lastmod>2026-11-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://drlekhramgurjar.com/#intro-video-section</loc>
+    <lastmod>2026-11-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://drlekhramgurjar.com/#clinical-areas</loc>
+    <lastmod>2026-11-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://drlekhramgurjar.com/#instagram-videos</loc>
+    <lastmod>2026-11-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://drlekhramgurjar.com/#reviews</loc>
+    <lastmod>2026-11-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://drlekhramgurjar.com/#contact</loc>
+    <lastmod>2026-11-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+</urlset>

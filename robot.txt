@@ -1,0 +1,30 @@
+# ==============================================================================
+# robots.txt for Dr. Lekhram Gurjar - M.R. Homeopathic Research Hospital
+# Website: https://drlekhramgurjar.com/
+# ==============================================================================
+
+User-agent: *
+Allow: /
+Allow: /style.css
+Allow: /*.png$
+Allow: /*.jpg$
+Allow: /*.jpeg$
+Allow: /*.svg$
+Allow: /*.webp$
+Allow: /api/media/videos/
+Allow: /api/media/images/
+
+# Disallow administrative endpoints and internal APIs
+Disallow: /api/admin/
+Disallow: /api/appointments/
+Disallow: /clinic_uploads/site_content.json
+
+# Disallow major search engines from scraping private media upload management
+User-agent: Googlebot
+Disallow: /api/admin/
+
+User-agent: Bingbot
+Disallow: /api/admin/
+
+# Link to the official XML sitemap
+Sitemap: https://drlekhramgurjar.com/sitemap.xml

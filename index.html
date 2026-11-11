@@ -1,0 +1,1301 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dr. Lekhram Gurjar | M.R. Homeopathic Research Hospital, Sanganer, Jaipur</title>
+  <meta name="description" content="Official clinical portal of Dr. Lekhram Gurjar (BHMS), consultant homeopath at M.R. Homeopathic Research Hospital in Sanganer, Jaipur. Schedule in-clinic appointments for chronic skin, gastrointestinal, and renal calculi care." />
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Google Fonts: Playfair Display & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind Configuration for Ivory / Sage Editorial Theme -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            ivory: {
+              50: '#FAF8F5',
+              100: '#F5F2EB',
+              200: '#EBE5D8',
+              300: '#DED5C2',
+            },
+            sage: {
+              50: '#F4F7F4',
+              100: '#E4EDE5',
+              600: '#4A6953',
+              700: '#3D5644',
+              800: '#2A3C2F',
+            },
+            champagne: {
+              400: '#D4AF37',
+              500: '#C59E27',
+              600: '#AA8518',
+            },
+            charcoal: {
+              800: '#22252A',
+              900: '#17191C',
+            }
+          },
+          fontFamily: {
+            serif: ['"Playfair Display"', 'Georgia', 'serif'],
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+          },
+          boxShadow: {
+            'soft': '0 20px 40px -15px rgba(23, 25, 28, 0.05)',
+            'elevated': '0 25px 50px -12px rgba(42, 60, 47, 0.14)',
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Schema.org JSON-LD Structured Data for Local Physician SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Physician",
+    "name": "Dr. Lekhram Gurjar",
+    "jobTitle": "Consultant Homeopathic Physician",
+    "medicalSpecialty": "Homeopathy",
+    "qualifications": "BHMS (Swasthya Kalyan Homoeopathic Medical College, Jaipur, 2012)",
+    "sameAs": "https://www.instagram.com/drlekhramgurjar/",
+    "worksFor": {
+      "@type": "MedicalClinic",
+      "name": "M.R. Homeopathic Research Hospital",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "House No. 15, Asind Nagar, Near Chordia Petrol Pump",
+        "addressLocality": "Sanganer, Jaipur",
+        "addressRegion": "Rajasthan",
+        "postalCode": "302029",
+        "addressCountry": "IN"
+      }
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+        "opens": "10:00",
+        "closes": "20:00"
+      }
+    ],
+    "priceRange": "₹200",
+    "telephone": "+919829000000"
+  }
+  </script>
+
+  <style>
+    body {
+      background-color: #FAF8F5;
+      color: #17191C;
+      overflow-x: hidden;
+    }
+    .custom-scrollbar::-webkit-scrollbar {
+      width: 6px;
+    }
+    .custom-scrollbar::-webkit-scrollbar-track {
+      background: #F5F2EB;
+    }
+    .custom-scrollbar::-webkit-scrollbar-thumb {
+      background: #DED5C2;
+      border-radius: 4px;
+    }
+    .editable-outline {
+      outline: 2px dashed #4A6953 !important;
+      outline-offset: 3px !important;
+      cursor: text !important;
+    }
+    svg {
+      flex-shrink: 0;
+      display: inline-block;
+      vertical-align: middle;
+    }
+  </style>
+</head>
+<body class="font-sans antialiased text-charcoal-900 selection:bg-sage-100 selection:text-sage-800">
+
+  <!-- ========================================================================= -->
+  <!-- ADMIN ACTIVE LIVE TOP-BAR (ONLY VISIBLE WHEN LOGGED IN) -->
+  <!-- ========================================================================= -->
+  <div id="admin-live-bar" class="hidden sticky top-0 z-50 bg-charcoal-900 text-white px-4 py-2 border-b border-champagne-500/40 text-xs shadow-xl">
+    <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-3">
+      <div class="flex items-center gap-2 shrink-0">
+        <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-ping"></span>
+        <span class="font-semibold tracking-wide text-champagne-400">Admin Mode Active:</span>
+        <span class="text-stone-300 font-mono text-[11px]">drlekhramgurjar01</span>
+      </div>
+
+      <!-- Live Controls: Hero Background Opacity & In-Place Editing -->
+      <div class="flex items-center gap-4 flex-wrap">
+        <div class="flex items-center gap-2 bg-charcoal-800 px-3 py-1 rounded-full border border-stone-700">
+          <span class="text-stone-300 text-[11px]">Front Bg Opacity:</span>
+          <input 
+            type="range" 
+            id="admin-live-opacity-slider" 
+            min="0" 
+            max="100" 
+            value="85" 
+            oninput="applyHeroBgOpacity(this.value)" 
+            class="w-20 sm:w-28 h-1.5 bg-stone-600 rounded appearance-none cursor-pointer accent-champagne-500" 
+            title="Adjust Front Background Opacity"
+          />
+          <span id="admin-live-opacity-val" class="font-mono text-champagne-400 w-8 text-right font-bold">85%</span>
+        </div>
+
+        <button 
+          id="toggle-live-edit-btn" 
+          onclick="toggleInPlaceEditing()" 
+          class="px-3.5 py-1 rounded-full bg-sage-700 hover:bg-sage-600 text-white font-medium text-[11px] transition flex items-center gap-1.5 shrink-0"
+        >
+          <span id="live-edit-dot" class="w-2 h-2 rounded-full bg-stone-300"></span>
+          <span id="live-edit-text">Enable On-Page Text Edit</span>
+        </button>
+
+        <button 
+          onclick="openAdminModal()" 
+          class="px-3.5 py-1 rounded-full border border-stone-600 hover:bg-charcoal-800 text-stone-200 text-[11px] font-medium transition shrink-0"
+        >
+          Open Admin Panel
+        </button>
+
+        <button 
+          onclick="adminLogout()" 
+          class="text-red-400 hover:text-red-300 font-semibold text-[11px] underline underline-offset-4 shrink-0"
+        >
+          Logout
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- TOP CLINIC VERIFIED NOTICE BAR -->
+  <div class="bg-sage-800 text-ivory-100 text-[11px] font-medium tracking-wide py-2 px-4 border-b border-sage-700">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+      <div class="flex items-center gap-2 text-center sm:text-left">
+        <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse shrink-0"></span>
+        <span>M.R. Homeopathic Research Hospital &bull; <span data-cms="doctorName">Dr. Lekhram Gurjar</span> (BHMS) &bull; Sanganer, Jaipur</span>
+      </div>
+      <div class="flex items-center gap-4 text-stone-300 shrink-0">
+        <span>Timings: <span data-cms="clinicHours">10:00 AM – 08:00 PM</span></span>
+        <button onclick="openBookingModal()" class="text-champagne-400 hover:text-white underline underline-offset-4">Schedule In-Clinic Visit</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- STICKY MAIN NAVIGATION -->
+  <nav class="sticky top-0 z-40 bg-ivory-50/95 backdrop-blur-md border-b border-ivory-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 min-h-[4.5rem] py-2 flex justify-between items-center gap-2 sm:gap-4">
+      <a href="#" class="flex flex-col shrink-0 min-w-0 pr-2">
+        <span class="font-serif text-lg sm:text-2xl font-bold tracking-tight text-charcoal-900 truncate" data-cms="doctorName">Dr. Lekhram Gurjar</span>
+        <span class="text-[8px] sm:text-[10px] uppercase tracking-widest text-stone-500 font-semibold truncate" data-cms="clinicName">M.R. Homeopathic Research Hospital</span>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <div class="hidden xl:flex items-center gap-4 2xl:gap-6 text-[11px] 2xl:text-xs font-semibold tracking-wider uppercase text-stone-700 whitespace-nowrap">
+        <a href="#about" class="hover:text-sage-700 transition whitespace-nowrap">About Doctor</a>
+        <a href="#intro-video-section" class="hover:text-sage-700 transition whitespace-nowrap text-sage-800 font-bold">Intro Video</a>
+        <a href="#clinical-areas" class="hover:text-sage-700 transition whitespace-nowrap">Clinical Areas</a>
+        <a href="#reviews" class="hover:text-sage-700 transition whitespace-nowrap">Reviews</a>
+        <a href="#instagram-videos" class="hover:text-sage-700 transition whitespace-nowrap">Reels & Videos</a>
+        <a href="#contact" class="hover:text-sage-700 transition whitespace-nowrap">Location</a>
+        <button onclick="openAdminModal()" class="text-stone-400 hover:text-charcoal-900 transition flex items-center gap-1 whitespace-nowrap" title="Clinic Administrative Desk">
+          <svg class="w-3.5 h-3.5 fill-current shrink-0" viewBox="0 0 20 20"><path d="M10 2a5 5 0 00-5 5v2a2 2 0 00-2 2v5a2 2 0 002 2h10a2 2 0 002-2v-5a2 2 0 00-2-2V7a5 5 0 00-5-5zm3 7H7V7a3 3 0 016 0v2z"/></svg>
+          Admin
+        </button>
+      </div>
+
+      <!-- Action Buttons -->
+      <div class="flex items-center gap-2 sm:gap-3 shrink-0 ml-auto">
+        <!-- Verified Instagram Link -->
+        <a id="nav-instagram-link" href="https://www.instagram.com/drlekhramgurjar/" target="_blank" rel="noopener noreferrer" class="p-1.5 sm:p-2 text-stone-600 hover:text-pink-700 transition flex items-center justify-center shrink-0" aria-label="Official Instagram @drlekhramgurjar">
+          <svg class="w-4 h-4 sm:w-5 sm:h-5 fill-current shrink-0" viewBox="0 0 24 24">
+            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.13-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+          </svg>
+        </a>
+        <button onclick="openBookingModal()" class="bg-sage-700 hover:bg-sage-800 text-white text-[11px] sm:text-xs font-semibold uppercase tracking-wider px-3 sm:px-5 py-2 sm:py-2.5 rounded-full transition shadow-sm whitespace-nowrap shrink-0">
+          Book Appointment
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION WITH FULL PANORAMIC CLINICAL BANNER BACKGROUND -->
+  <section class="relative min-h-[640px] lg:min-h-[720px] flex items-center border-b border-ivory-200 overflow-hidden bg-ivory-100">
+    <!-- Background Image Layer (Controlled Exclusively by Admin) -->
+    <div class="absolute inset-0 z-0 pointer-events-none">
+      <img 
+        id="hero-bg-banner"
+        src="ChatGPT Image Sep 17, 2026, 12_10_25 AM.png"
+        onerror="this.onerror=null; this.src='banner.png';"
+        alt="Dr. Lekhram Gurjar - M.R. Homeopathic Research Hospital Banner" 
+        class="w-full h-full object-cover object-right sm:object-center filter brightness-[1.02] contrast-[1.01] transition-opacity duration-300 ease-out" 
+        style="opacity: 0.85;"
+      />
+      <!-- Editorial Light Ivory Gradient for Optimal Readability -->
+      <div class="absolute inset-0 bg-gradient-to-r from-ivory-50 via-ivory-50/85 to-transparent lg:via-ivory-50/75"></div>
+      <div class="absolute inset-0 bg-gradient-to-t from-ivory-40 via-transparent to-transparent"></div>
+    </div>
+
+    <!-- Hero Content Overlay -->
+    <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 py-16 lg:py-24 w-full">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+        
+        <div class="lg:col-span-8 space-y-6">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/90 backdrop-blur-md border border-ivory-300 text-sage-800 text-xs font-semibold uppercase tracking-wider shadow-sm">
+            <span class="w-2 h-2 rounded-full bg-emerald-600 animate-pulse shrink-0"></span>
+            <span data-cms="heroBadge">Sanganer, Jaipur &bull; Consultations Open Today</span>
+          </div>
+
+          <h1 class="font-serif text-3xl sm:text-5xl lg:text-6xl text-charcoal-900 leading-[1.12] font-normal" data-cms="heroHeading">
+            Personalized Homeopathic Care, <br class="hidden sm:inline" />
+            <span class="italic font-serif text-sage-700">Centered Around You.</span>
+          </h1>
+
+          <p class="text-stone-700 text-base sm:text-lg leading-relaxed max-w-2xl font-normal bg-white/40 lg:bg-transparent backdrop-blur-xs p-2 lg:p-0 rounded-xl" data-cms="heroSubheading">
+            Under the clinical direction of <strong class="font-semibold text-charcoal-900">Dr. Lekhram Gurjar (BHMS)</strong> at M.R. Homeopathic Research Hospital. Combining classical evaluation with constitutional therapeutics for gastrointestinal disorders, chronic dermatological conditions, and renal calculi.
+          </p>
+
+          <div class="pt-2 flex flex-wrap items-center gap-4">
+            <button onclick="openBookingModal()" class="px-8 py-4 bg-sage-700 hover:bg-sage-800 text-white text-xs font-semibold tracking-widest uppercase rounded-full shadow-md transition transform hover:-translate-y-0.5">
+              Book In-Clinic Visit (<span data-cms="consultationFee">₹200</span> Fee)
+            </button>
+            
+            <button onclick="triggerWhatsAppInquiry()" class="px-7 py-4 border border-stone-300 bg-white/95 backdrop-blur-sm hover:bg-white text-charcoal-800 text-xs font-semibold tracking-wider uppercase rounded-full transition flex items-center gap-2 shadow-sm">
+              <svg class="w-4 h-4 text-emerald-600 fill-current shrink-0" viewBox="0 0 24 24">
+                <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/>
+              </svg>
+              WhatsApp Reception
+            </button>
+          </div>
+
+          <!-- Verified Facts Strip -->
+          <div class="pt-6 border-t border-ivory-300/80 grid grid-cols-3 gap-3 sm:gap-6 max-w-xl">
+            <div class="bg-white/70 backdrop-blur-sm p-3 rounded-xl border border-ivory-200">
+              <p class="font-serif text-xl sm:text-2xl font-bold text-charcoal-900" data-cms="expYears">13+ Yrs</p>
+              <p class="text-[10px] sm:text-[11px] uppercase tracking-wider text-stone-600 mt-0.5 font-medium">Practice</p>
+            </div>
+            <div class="bg-white/70 backdrop-blur-sm p-3 rounded-xl border border-ivory-200">
+              <p class="font-serif text-xl sm:text-2xl font-bold text-charcoal-900" data-cms="consultationFee">₹200</p>
+              <p class="text-[10px] sm:text-[11px] uppercase tracking-wider text-stone-600 mt-0.5 font-medium">Clinic Fee</p>
+            </div>
+            <div class="bg-white/70 backdrop-blur-sm p-3 rounded-xl border border-ivory-200">
+              <p class="font-serif text-xl sm:text-2xl font-bold text-charcoal-900">BHMS</p>
+              <p class="text-[10px] sm:text-[11px] uppercase tracking-wider text-stone-600 mt-0.5 font-medium">Degree (2012)</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="lg:col-span-4 hidden lg:block">
+          <!-- Floating Editorial Verified Stamp -->
+          <div class="bg-white/90 backdrop-blur-md border border-ivory-300 rounded-2xl p-5 shadow-elevated max-w-xs ml-auto space-y-3">
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-xl bg-emerald-50 text-emerald-700 flex items-center justify-center font-bold text-lg shrink-0">
+                ✓
+              </div>
+              <div>
+                <div class="text-xs font-bold text-charcoal-900">Classical Homeopathy</div>
+                <div class="text-[11px] text-stone-500" data-cms="clinicName">M.R. Research Hospital</div>
+              </div>
+            </div>
+            <p class="text-[11px] text-stone-600 leading-relaxed" data-cms="heroCardNotice">
+              Serving Sanganer & Jaipur with individualized holistic outpatient evaluations, dietary coordination, and constitutional treatments.
+            </p>
+            <div class="pt-1 border-t border-ivory-200 flex justify-between text-[10px] text-stone-500 font-mono">
+              <span>Location: Asind Nagar,Sanganer,Jaipur</span>
+              <span>Fee: <span data-cms="consultationFee">₹200</span></span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT DOCTOR SECTION -->
+  <section id="about" class="py-24 bg-white border-b border-ivory-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+      
+      <!-- Doctor Portrait Column -->
+      <div class="lg:col-span-5">
+        <div class="relative bg-ivory-50 p-4 rounded-3xl border border-ivory-300 shadow-soft max-w-md mx-auto">
+          <div class="aspect-square rounded-2xl overflow-hidden border border-ivory-200 relative bg-stone-100">
+            <img 
+              id="about-doctor-img"
+              src="ChatGPT Image Sep 17, 2026, 12_10_58 AM.png"
+              onerror="this.onerror=null; this.src='doctor.png';"
+              alt="Dr. Lekhram Gurjar Homeopathy Consultation Desk" 
+              class="w-full h-full object-cover object-top" 
+            />
+          </div>
+          <div class="pt-4 px-2">
+            <div class="flex items-center justify-between gap-2">
+              <div>
+                <h3 class="font-serif text-lg font-bold text-charcoal-900" data-cms="doctorName">Dr. Lekhram Gurjar</h3>
+                <p class="text-xs text-sage-700 font-semibold" data-cms="doctorSpecialty">Govt Medical Officer Homeopathy (Rajasthan Govt).</p>
+              </div>
+              <span class="text-xs font-mono font-bold bg-sage-50 text-sage-800 border border-sage-200 px-3 py-1 rounded-full shrink-0">
+                BHMS (2012)
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bio Column -->
+      <div class="lg:col-span-7 space-y-5">
+        <span class="text-xs uppercase tracking-widest text-sage-700 font-bold">Physician Profile</span>
+        <h2 class="font-serif text-3xl sm:text-4xl text-charcoal-900 leading-tight" data-cms="aboutHeading">
+          A Decade of Constitutional Clinical Practice
+        </h2>
+        <div class="w-12 h-0.5 bg-champagne-500 my-2"></div>
+        <p class="text-stone-600 text-sm leading-relaxed" data-cms="aboutBioPara1">
+          Dr. Lekhram Gurjar graduated with a Bachelor of Homeopathic Medicine and Surgery (BHMS) from the Swasthya Kalyan Homoeopathic Medical College & Hospital in Jaipur in 2012. He practices with an evidence-informed clinical mindset, providing individualized consultation for recurring, chronic illnesses.
+        </p>
+        <p class="text-stone-600 text-sm leading-relaxed" data-cms="aboutBioPara2">
+          At M.R. Homeopathic Research Hospital in Sanganer, case taking is thorough. Dr. Gurjar evaluates dietetic habits, laboratory reports, stress indices, and specific modalities rather than offering generic quick-fixes. 
+        </p>
+
+        <div class="pt-3 grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs">
+          <div class="p-3.5 bg-ivory-50 rounded-xl border border-ivory-200">
+            <div class="font-semibold text-charcoal-900">Academic Qualification</div>
+            <div class="text-stone-600 mt-0.5" data-cms="doctorQualification">BHMS, Swasthya Kalyan College (2012)</div>
+          </div>
+          <div class="p-3.5 bg-ivory-50 rounded-xl border border-ivory-200">
+            <div class="font-semibold text-charcoal-900">Consultation Languages</div>
+            <div class="text-stone-600 mt-0.5" data-cms="doctorLanguages">Hindi, Rajasthani, English</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- INTRODUCTION VIDEO PLAYER SECTION (CLEAN PLAYER - UPLOAD VIA ADMIN PANEL ONLY) -->
+  <!-- ========================================================================= -->
+  <section id="intro-video-section" class="py-24 bg-gradient-to-b from-ivory-50 via-white to-ivory-50 border-b border-ivory-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Clean Video Player Column -->
+        <div class="lg:col-span-7">
+          <div class="relative bg-charcoal-900 rounded-3xl p-2 sm:p-3 shadow-2xl border border-ivory-300 overflow-hidden group">
+            
+            <div class="relative aspect-video rounded-2xl overflow-hidden bg-black flex items-center justify-center">
+              <video 
+                id="dr-intro-video"
+                class="w-full h-full object-cover cursor-pointer"
+                controls
+                playsinline
+                preload="metadata"
+                poster="ChatGPT Image Sep 17, 2026, 12_10_58 AM.png"
+                onclick="toggleIntroVideoPlay()"
+              >
+                <!-- Video Stream source managed permanently via Admin Panel -->
+                <source id="dr-intro-video-source" src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+
+              <!-- Custom Play Overlay Button (Auto-hides smoothly when video plays) -->
+              <button 
+                id="intro-play-overlay-btn"
+                onclick="toggleIntroVideoPlay(event)" 
+                class="absolute inset-0 m-auto w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-charcoal-900/80 hover:bg-sage-700 text-white backdrop-blur-md flex items-center justify-center transition transform group-hover:scale-110 shadow-2xl z-20 shrink-0"
+                aria-label="Play Dr. Lekhram Gurjar Introduction Video"
+              >
+                <svg id="intro-play-icon" class="w-8 h-8 fill-current translate-x-1 shrink-0" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+              </button>
+            </div>
+
+            <!-- Video Card Bottom Bar -->
+            <div class="px-4 py-3 flex flex-wrap items-center justify-between gap-2 text-white">
+              <div class="flex items-center gap-2">
+                <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse shrink-0"></span>
+                <span id="intro-video-badge" class="font-medium text-xs text-champagne-400">Introduction to Practice & Clinic Principles</span>
+              </div>
+              <a 
+                href="https://www.instagram.com/drlekhramgurjar/" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                class="text-xs text-stone-300 hover:text-white flex items-center gap-1.5 transition"
+              >
+                <span>Dr. Lekhram Gurjar</span>
+                <svg class="w-3.5 h-3.5 text-pink-500 fill-current shrink-0" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.13-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+              </a>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Information & Direct Instagram Integration Details -->
+        <div class="lg:col-span-5 space-y-6">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-rose-50 border border-rose-200 text-[11px] font-semibold tracking-wider text-rose-700 uppercase">
+            <svg class="w-3.5 h-3.5 fill-current shrink-0" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.13-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            Official Clinical Video & Instagram
+          </div>
+
+          <h2 id="intro-video-title" class="font-serif text-3xl sm:text-4xl text-charcoal-900 leading-tight">
+            Meet Dr. Lekhram Gurjar: His Philosophy & Clinical Care
+          </h2>
+
+          <p id="intro-video-desc" class="text-stone-600 text-sm leading-relaxed">
+            In this introduction video, Dr. Lekhram Gurjar explains how classical homeopathy tackles deep-seated pathology, dietary interactions, and individualized treatments at M.R. Homeopathic Research Hospital.
+          </p>
+
+          <!-- Live Instagram Profile Spotlight Card -->
+          <div class="p-5 bg-white border border-ivory-300 rounded-2xl shadow-soft space-y-4">
+            <div class="flex items-center gap-4">
+              <div class="relative w-14 h-14 rounded-full p-0.5 bg-gradient-to-tr from-amber-500 via-rose-500 to-purple-600 shrink-0">
+                <img 
+                  src="ChatGPT Image Sep 17, 2026, 12_10_58 AM.png"
+                  onerror="this.onerror=null; this.src='doctor.png';"
+                  alt="Dr. Lekhram Gurjar on Instagram" 
+                  class="w-full h-full rounded-full object-cover border-2 border-white"
+                />
+                <span class="absolute bottom-0 right-0 w-4 h-4 bg-emerald-500 border-2 border-white rounded-full"></span>
+              </div>
+              <div>
+                <div class="flex items-center gap-1.5">
+                  <span class="font-bold text-sm text-charcoal-900">drlekhramgurjar</span>
+                  <svg class="w-4 h-4 text-blue-500 fill-current shrink-0" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                </div>
+                <p class="text-xs text-stone-500">Dr. Lekhram Gurjar &bull; Official Account</p>
+                <p class="text-[11px] text-sage-700 font-medium">Homeopathy • Health Tips • Patient Cases</p>
+              </div>
+            </div>
+
+            <div class="flex items-center justify-between gap-2 pt-2 border-t border-ivory-200">
+              <a 
+                id="live-instagram-btn"
+                href="https://www.instagram.com/drlekhramgurjar/" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                class="inline-flex items-center gap-2 px-5 py-2.5 bg-gradient-to-r from-purple-600 via-rose-500 to-amber-500 hover:opacity-95 text-white text-xs font-semibold rounded-full shadow transition shrink-0"
+              >
+                <svg class="w-4 h-4 fill-current shrink-0" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.13-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                Connect on Instagram
+              </a>
+
+              <button onclick="openAdminModal()" class="text-xs text-stone-500 hover:text-sage-700 underline font-medium shrink-0">
+                Admin: Edit Video & Details
+              </button>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- TREATMENTS & CLINICAL AREAS WITH HIGH RESOLUTION INFOGRAPHICS -->
+  <!-- ========================================================================= -->
+  <section id="clinical-areas" class="py-24 bg-ivory-50 border-b border-ivory-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+      <div class="max-w-2xl mx-auto text-center mb-16">
+        <span class="text-xs uppercase tracking-widest text-sage-700 font-bold">Services & Specializations</span>
+        <h2 class="font-serif text-3xl sm:text-4xl text-charcoal-900 mt-2">
+          Verified Areas of Clinical Consultation
+        </h2>
+        <p class="text-stone-600 text-xs sm:text-sm mt-3 leading-relaxed">
+          Standardized clinical consultations adhering to homoeopathic principles alongside supportive lifestyle and dietary guidance.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <!-- Card 1: Renal Calculi (Kidney Stones) -->
+        <div class="bg-white border border-ivory-300 rounded-3xl overflow-hidden shadow-soft hover:shadow-elevated transition-all flex flex-col justify-between group">
+          <div>
+            <div class="relative aspect-[16/10] overflow-hidden bg-ivory-100 border-b border-ivory-200">
+              <img 
+                id="service-img-1"
+                src="Kidney Stones_ Clinical Anatomy Close-Up.png"
+                onerror="this.onerror=null; this.src='kidneystone.png';"
+                alt="Renal Calculi Care Dr Lekhram Gurjar"
+                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+              />
+              <span class="absolute top-3 left-3 bg-white/90 backdrop-blur-sm text-charcoal-900 text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider">
+                Renal Health
+              </span>
+            </div>
+            <div class="p-6">
+              <h3 class="font-serif text-xl font-bold text-charcoal-900">Renal Calculi (Kidney Stones)</h3>
+              <p class="text-stone-600 text-xs mt-2.5 leading-relaxed">
+                Constitutional homeopathic management designed to relieve spasmodic renal colic pain, assist natural stone clearance, and prevent stone recurrence.
+              </p>
+            </div>
+          </div>
+          <div class="px-6 pb-6 pt-2">
+            <button onclick="openBookingModal()" class="w-full py-2.5 px-4 bg-sage-50 hover:bg-sage-100 text-sage-800 text-xs font-semibold rounded-xl border border-sage-200 transition">
+              Consult for Renal Health
+            </button>
+          </div>
+        </div>
+
+        <!-- Card 2: Chronic Dermatological Care -->
+        <div class="bg-white border border-ivory-300 rounded-3xl overflow-hidden shadow-soft hover:shadow-elevated transition-all flex flex-col justify-between group">
+          <div>
+            <div class="relative aspect-[16/10] overflow-hidden bg-ivory-100 border-b border-ivory-200">
+              <img 
+                id="service-img-2"
+                src="Dermatology and Skin Allergies Guide.png"
+                onerror="this.onerror=null; this.src='skin.png';"
+                alt="Chronic Skin Diseases Dr Lekhram Gurjar"
+                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+              />
+              <span class="absolute top-3 left-3 bg-white/90 backdrop-blur-sm text-charcoal-900 text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider">
+                Dermatology
+              </span>
+            </div>
+            <div class="p-6">
+              <h3 class="font-serif text-xl font-bold text-charcoal-900">Chronic Skin Diseases</h3>
+              <p class="text-stone-600 text-xs mt-2.5 leading-relaxed">
+                Gentle internal therapeutics addressing underlying immune reactions for eczema, recurring fungal infections, psoriasis, and allergic dermatitis.
+              </p>
+            </div>
+          </div>
+          <div class="px-6 pb-6 pt-2">
+            <button onclick="openBookingModal()" class="w-full py-2.5 px-4 bg-sage-50 hover:bg-sage-100 text-sage-800 text-xs font-semibold rounded-xl border border-sage-200 transition">
+              Consult for Skin Care
+            </button>
+          </div>
+        </div>
+
+        <!-- Card 3: Gastrointestinal & Digestive Health -->
+        <div class="bg-white border border-ivory-300 rounded-3xl overflow-hidden shadow-soft hover:shadow-elevated transition-all flex flex-col justify-between group">
+          <div>
+            <div class="relative aspect-[16/10] overflow-hidden bg-ivory-100 border-b border-ivory-200">
+              <img 
+                id="service-img-3"
+                src="Gastrointestinal Disorders Infographic.png"
+                onerror="this.onerror=null; this.src='gastro.png';"
+                alt="Gastrointestinal Care Dr Lekhram Gurjar"
+                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+              />
+              <span class="absolute top-3 left-3 bg-white/90 backdrop-blur-sm text-charcoal-900 text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider">
+                Gastrointestinal
+              </span>
+            </div>
+            <div class="p-6">
+              <h3 class="font-serif text-xl font-bold text-charcoal-900">Digestive & GI Disorders</h3>
+              <p class="text-stone-600 text-xs mt-2.5 leading-relaxed">
+                Personalized homeopathic evaluation for chronic acidity, irritable bowel syndrome (IBS), chronic constipation, piles/fissures, and hepatic sluggishness.
+              </p>
+            </div>
+          </div>
+          <div class="px-6 pb-6 pt-2">
+            <button onclick="openBookingModal()" class="w-full py-2.5 px-4 bg-sage-50 hover:bg-sage-100 text-sage-800 text-xs font-semibold rounded-xl border border-sage-200 transition">
+              Consult for Digestive Care
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- INSTAGRAM REELS SECTION (THUMBNAIL-BACKED WITH DIRECT REEL PLAYERS) -->
+  <!-- ========================================================================= -->
+  <section id="instagram-videos" class="py-24 bg-ivory-100/70 border-b border-ivory-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+      
+      <div class="max-w-2xl mx-auto text-center mb-16">
+        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-pink-50 border border-pink-200 text-pink-700 text-xs font-semibold uppercase tracking-wider shadow-sm">
+          <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.13-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          <span>Official Instagram Reels</span>
+        </div>
+        <h2 class="font-serif text-3xl sm:text-4xl text-charcoal-900 mt-3 font-normal">
+          Latest Clinical Reels & Medical Advice
+        </h2>
+        <p class="text-stone-600 text-xs sm:text-sm mt-3 leading-relaxed">
+          Watch directly on Instagram: Dr. Lekhram Gurjar shares updates on homeopathic cures, clinic procedures, and natural wellness tips.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <!-- Reel 1: DfkMByACwJ- -->
+        <div class="bg-white rounded-3xl overflow-hidden border border-ivory-300 shadow-soft hover:shadow-elevated transition-all flex flex-col justify-between group">
+          <div>
+            <div class="p-4 border-b border-ivory-200 flex items-center justify-between bg-ivory-50/70">
+              <div class="flex items-center gap-2.5">
+                <div class="w-8 h-8 rounded-full bg-gradient-to-tr from-amber-500 via-rose-500 to-purple-600 p-0.5">
+                  <div class="w-full h-full bg-white rounded-full flex items-center justify-center">
+                    <svg class="w-4 h-4 text-pink-600 fill-current" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.13-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                  </div>
+                </div>
+                <div>
+                  <h4 class="text-xs font-bold text-charcoal-900 leading-tight">drlekhramgurjar</h4>
+                  <p class="text-[10px] text-stone-500">Instagram Reel</p>
+                </div>
+              </div>
+              <span class="text-[10px] font-mono text-stone-400 bg-stone-100 px-2 py-0.5 rounded">DfkMByACwJ-</span>
+            </div>
+
+            <!-- Visible Thumbnail with Play Overlay -->
+            <div class="relative aspect-[9/12] overflow-hidden bg-charcoal-900">
+              <img 
+                id="reel-thumb-1"
+                src="ChatGPT Image Sep 17, 2026, 12_10_58 AM.png"
+                onerror="this.onerror=null; this.src='doctor.png';"
+                alt="Instagram Reel DfkMByACwJ- Thumbnail" 
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-charcoal-900/80 via-transparent to-transparent flex flex-col justify-end p-5">
+                <span class="text-white text-xs font-semibold leading-snug">Homeopathy Case Management & Classical Principles</span>
+                <span class="text-[11px] text-pink-300 mt-1 flex items-center gap-1">
+                  <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.13-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                  <span>@drlekhramgurjar</span>
+                </span>
+              </div>
+              <a href="https://www.instagram.com/drlekhramgurjar/reel/DfkMByACwJ-/" target="_blank" rel="noopener noreferrer" class="absolute inset-0 flex items-center justify-center">
+                <div class="w-14 h-14 rounded-full bg-charcoal-900/80 hover:bg-sage-700 text-white backdrop-blur-md flex items-center justify-center transition transform group-hover:scale-110 shadow-2xl">
+                  <svg class="w-7 h-7 fill-current translate-x-0.5" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="p-5 border-t border-ivory-200 bg-ivory-50/50">
+            <a 
+              href="https://www.instagram.com/drlekhramgurjar/reel/DfkMByACwJ-/" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              class="w-full py-3 px-4 bg-gradient-to-r from-purple-600 via-rose-500 to-amber-500 hover:opacity-95 text-white text-xs font-semibold rounded-full flex items-center justify-center gap-2 transition shadow-md"
+            >
+              <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.13-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+              <span>Play Reel on Instagram</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Reel 2: DfeURDViOG8 -->
+        <div class="bg-white rounded-3xl overflow-hidden border border-ivory-300 shadow-soft hover:shadow-elevated transition-all flex flex-col justify-between group">
+          <div>
+            <div class="p-4 border-b border-ivory-200 flex items-center justify-between bg-ivory-50/70">
+              <div class="flex items-center gap-2.5">
+                <div class="w-8 h-8 rounded-full bg-gradient-to-tr from-amber-500 via-rose-500 to-purple-600 p-0.5">
+                  <div class="w-full h-full bg-white rounded-full flex items-center justify-center">
+                    <svg class="w-4 h-4 text-pink-600 fill-current" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.13-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                  </div>
+                </div>
+                <div>
+                  <h4 class="text-xs font-bold text-charcoal-900 leading-tight">drlekhramgurjar</h4>
+                  <p class="text-[10px] text-stone-500">Instagram Reel</p>
+                </div>
+              </div>
+              <span class="text-[10px] font-mono text-stone-400 bg-stone-100 px-2 py-0.5 rounded">DfeURDViOG8</span>
+            </div>
+
+            <!-- Visible Thumbnail with Play Overlay -->
+            <div class="relative aspect-[9/12] overflow-hidden bg-charcoal-900">
+              <img 
+                id="reel-thumb-2"
+                src="banner.png"
+                onerror="this.onerror=null; this.src='ChatGPT Image Sep 17, 2026, 12_10_25 AM.png';"
+                alt="Instagram Reel DfeURDViOG8 Thumbnail" 
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-charcoal-900/80 via-transparent to-transparent flex flex-col justify-end p-5">
+                <span class="text-white text-xs font-semibold leading-snug">Lifestyle & Dietary Management for Chronic Health</span>
+                <span class="text-[11px] text-pink-300 mt-1 flex items-center gap-1">
+                  <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.13-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                  <span>@drlekhramgurjar</span>
+                </span>
+              </div>
+              <a href="https://www.instagram.com/drlekhramgurjar/reel/DfeURDViOG8/" target="_blank" rel="noopener noreferrer" class="absolute inset-0 flex items-center justify-center">
+                <div class="w-14 h-14 rounded-full bg-charcoal-900/80 hover:bg-sage-700 text-white backdrop-blur-md flex items-center justify-center transition transform group-hover:scale-110 shadow-2xl">
+                  <svg class="w-7 h-7 fill-current translate-x-0.5" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="p-5 border-t border-ivory-200 bg-ivory-50/50">
+            <a 
+              href="https://www.instagram.com/drlekhramgurjar/reel/DfeURDViOG8/" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              class="w-full py-3 px-4 bg-gradient-to-r from-purple-600 via-rose-500 to-amber-500 hover:opacity-95 text-white text-xs font-semibold rounded-full flex items-center justify-center gap-2 transition shadow-md"
+            >
+              <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.13-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+              <span>Play Reel on Instagram</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Reel 3: DfPMeMvTOgS -->
+        <div class="bg-white rounded-3xl overflow-hidden border border-ivory-300 shadow-soft hover:shadow-elevated transition-all flex flex-col justify-between group">
+          <div>
+            <div class="p-4 border-b border-ivory-200 flex items-center justify-between bg-ivory-50/70">
+              <div class="flex items-center gap-2.5">
+                <div class="w-8 h-8 rounded-full bg-gradient-to-tr from-amber-500 via-rose-500 to-purple-600 p-0.5">
+                  <div class="w-full h-full bg-white rounded-full flex items-center justify-center">
+                    <svg class="w-4 h-4 text-pink-600 fill-current" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.13-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                  </div>
+                </div>
+                <div>
+                  <h4 class="text-xs font-bold text-charcoal-900 leading-tight">drlekhramgurjar</h4>
+                  <p class="text-[10px] text-stone-500">Instagram Reel</p>
+                </div>
+              </div>
+              <span class="text-[10px] font-mono text-stone-400 bg-stone-100 px-2 py-0.5 rounded">DfPMeMvTOgS</span>
+            </div>
+
+            <!-- Visible Thumbnail with Play Overlay -->
+            <div class="relative aspect-[9/12] overflow-hidden bg-charcoal-900">
+              <img 
+                id="reel-thumb-3"
+                src="ChatGPT Image Sep 17, 2026, 12_10_58 AM.png"
+                onerror="this.onerror=null; this.src='doctor.png';"
+                alt="Instagram Reel DfPMeMvTOgS Thumbnail" 
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-charcoal-900/80 via-transparent to-transparent flex flex-col justify-end p-5">
+                <span class="text-white text-xs font-semibold leading-snug">Patient Consultation & Case Healing Journey</span>
+                <span class="text-[11px] text-pink-300 mt-1 flex items-center gap-1">
+                  <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.13-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                  <span>@drlekhramgurjar</span>
+                </span>
+              </div>
+              <a href="https://www.instagram.com/drlekhramgurjar/reel/DfPMeMvTOgS/" target="_blank" rel="noopener noreferrer" class="absolute inset-0 flex items-center justify-center">
+                <div class="w-14 h-14 rounded-full bg-charcoal-900/80 hover:bg-sage-700 text-white backdrop-blur-md flex items-center justify-center transition transform group-hover:scale-110 shadow-2xl">
+                  <svg class="w-7 h-7 fill-current translate-x-0.5" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="p-5 border-t border-ivory-200 bg-ivory-50/50">
+            <a 
+              href="https://www.instagram.com/drlekhramgurjar/reel/DfPMeMvTOgS/" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              class="w-full py-3 px-4 bg-gradient-to-r from-purple-600 via-rose-500 to-amber-500 hover:opacity-95 text-white text-xs font-semibold rounded-full flex items-center justify-center gap-2 transition shadow-md"
+            >
+              <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.13-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+              <span>Play Reel on Instagram</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- REVIEWS SECTION -->
+  <section id="reviews" class="py-24 bg-white border-b border-ivory-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+      <div class="max-w-2xl mx-auto text-center mb-16">
+        <span class="text-xs uppercase tracking-widest text-sage-700 font-bold">Patient Experiences</span>
+        <h2 class="font-serif text-3xl sm:text-4xl text-charcoal-900 mt-2">
+          Clinical Trust & Patient Words
+        </h2>
+        <p class="text-stone-600 text-xs sm:text-sm mt-3 leading-relaxed">
+          Read candid reviews from patients receiving constitutional treatment under Dr. Lekhram Gurjar.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-ivory-50 p-6 rounded-3xl border border-ivory-200 shadow-soft flex flex-col justify-between">
+          <div class="space-y-3">
+            <div class="flex text-champagne-500 text-sm">★★★★★</div>
+            <p class="text-stone-700 text-xs sm:text-sm leading-relaxed italic">
+              "Suffered from severe kidney stone pain for months. Dr. Gurjar's medicine provided steady relief without any painful surgery. Highly recommend him in Sanganer."
+            </p>
+          </div>
+          <div class="pt-4 border-t border-ivory-200 mt-4 flex items-center justify-between">
+            <span class="font-bold text-xs text-charcoal-900">Rameshwar Sharma</span>
+            <span class="text-[10px] text-stone-500 font-mono">Jaipur</span>
+          </div>
+        </div>
+
+        <div class="bg-ivory-50 p-6 rounded-3xl border border-ivory-200 shadow-soft flex flex-col justify-between">
+          <div class="space-y-3">
+            <div class="flex text-champagne-500 text-sm">★★★★★</div>
+            <p class="text-stone-700 text-xs sm:text-sm leading-relaxed italic">
+              "My recurring allergic skin itching resolved completely after constitutional remedies and diet control. Very polite doctor who listens thoroughly."
+            </p>
+          </div>
+          <div class="pt-4 border-t border-ivory-200 mt-4 flex items-center justify-between">
+            <span class="font-bold text-xs text-charcoal-900">Pooja Meena</span>
+            <span class="text-[10px] text-stone-500 font-mono">Sanganer</span>
+          </div>
+        </div>
+
+        <div class="bg-ivory-50 p-6 rounded-3xl border border-ivory-200 shadow-soft flex flex-col justify-between">
+          <div class="space-y-3">
+            <div class="flex text-champagne-500 text-sm">★★★★★</div>
+            <p class="text-stone-700 text-xs sm:text-sm leading-relaxed italic">
+              "Honest clinical assessment and very reasonable ₹200 consultation fee. His diagnosis for chronic digestive problems has been accurate for our whole family."
+            </p>
+          </div>
+          <div class="pt-4 border-t border-ivory-200 mt-4 flex items-center justify-between">
+            <span class="font-bold text-xs text-charcoal-900">Mukesh Gurjar</span>
+            <span class="text-[10px] text-stone-500 font-mono">Rajasthan</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LOCATION & CONTACT SECTION -->
+  <section id="contact" class="py-24 bg-ivory-50 border-b border-ivory-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <div class="lg:col-span-6 space-y-6">
+          <span class="text-xs uppercase tracking-widest text-sage-700 font-bold">Hospital Location</span>
+          <h2 class="font-serif text-3xl sm:text-4xl text-charcoal-900">
+            Visit M.R. Homeopathic Research Hospital
+          </h2>
+          <div class="w-12 h-0.5 bg-champagne-500 my-2"></div>
+          
+          <div class="space-y-4 text-xs sm:text-sm text-stone-700">
+            <div class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-sage-700 mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+              <span>House No. 15, Asind Nagar, Near Chordia Petrol Pump, Sanganer, Jaipur, Rajasthan 302029</span>
+            </div>
+
+            <div class="flex items-center gap-3">
+              <svg class="w-5 h-5 text-sage-700 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+              <span>Timings: 10:00 AM – 08:00 PM (Monday – Sunday)</span>
+            </div>
+
+            <div class="flex items-center gap-3">
+              <svg class="w-5 h-5 text-sage-700 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+              <span>Consultation Fee: <strong class="text-charcoal-900">₹200 only</strong></span>
+            </div>
+          </div>
+
+          <div class="pt-4 flex flex-wrap gap-4">
+            <button onclick="openBookingModal()" class="px-7 py-3.5 bg-sage-700 hover:bg-sage-800 text-white text-xs font-semibold uppercase tracking-wider rounded-full shadow transition">
+              Book Appointment Now
+            </button>
+            <a href="https://maps.google.com/?q=Chordia+Petrol+Pump+Sanganer+Jaipur" target="_blank" rel="noopener noreferrer" class="px-6 py-3.5 border border-stone-300 bg-white hover:bg-stone-50 text-charcoal-800 text-xs font-semibold uppercase tracking-wider rounded-full shadow-sm transition">
+              Open in Google Maps
+            </a>
+          </div>
+        </div>
+
+        <div class="lg:col-span-6">
+          <div class="aspect-[4/3] rounded-3xl overflow-hidden border border-ivory-300 shadow-soft bg-stone-100">
+            <iframe 
+              title="Dr. Lekhram Gurjar Hospital Location"
+              src="https://maps.google.com/maps?q=Chordia%20Petrol%20Pump%20Sanganer%20Jaipur&t=&z=14&ie=UTF8&iwloc=&output=embed" 
+              class="w-full h-full border-0" 
+              loading="lazy"
+            ></iframe>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-charcoal-900 text-stone-400 py-12 border-t border-stone-800 text-xs">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 flex flex-col sm:flex-row justify-between items-center gap-6">
+      <div class="text-center sm:text-left">
+        <span class="font-serif text-lg font-bold text-white block">Dr. Lekhram Gurjar</span>
+        <span class="text-[11px] text-stone-400">Consultant Homeopath &bull; M.R. Homeopathic Research Hospital, Sanganer, Jaipur</span>
+      </div>
+      <div class="flex items-center gap-6">
+        <a href="#about" class="hover:text-white transition">About</a>
+        <a href="#intro-video-section" class="hover:text-white transition">Video</a>
+        <a href="#instagram-videos" class="hover:text-white transition">Reels</a>
+        <a href="#clinical-areas" class="hover:text-white transition">Services</a>
+        <a href="https://www.instagram.com/drlekhramgurjar/" target="_blank" rel="noopener noreferrer" class="text-pink-400 hover:text-white transition">Instagram</a>
+      </div>
+    </div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 mt-8 pt-6 border-t border-stone-800 text-center text-[10px] text-stone-500">
+      &copy; 2026 Dr. Lekhram Gurjar &bull; M.R. Homeopathic Research Hospital. All rights reserved.
+    </div>
+  </footer>
+
+  <!-- BOOKING MODAL -->
+  <div id="booking-modal" class="fixed inset-0 z-50 bg-charcoal-900/60 backdrop-blur-sm hidden flex items-center justify-center p-4">
+    <div class="bg-white rounded-3xl max-w-md w-full p-6 shadow-2xl border border-ivory-300 space-y-4">
+      <div class="flex justify-between items-center border-b border-ivory-200 pb-3">
+        <h3 class="font-serif text-lg font-bold text-charcoal-900">Schedule In-Clinic Visit</h3>
+        <button onclick="closeBookingModal()" class="text-stone-400 hover:text-charcoal-900 text-xl font-bold">&times;</button>
+      </div>
+      <p class="text-xs text-stone-600">Consultation Fee: ₹200. Timings: 10:00 AM – 08:00 PM at Sanganer, Jaipur.</p>
+      <form onsubmit="submitAppointmentForm(event)" class="space-y-3 text-xs">
+        <div>
+          <label class="block font-semibold text-charcoal-800 mb-1">Patient Full Name</label>
+          <input type="text" id="patient-name" required placeholder="Enter full name" class="w-full px-3 py-2 border border-ivory-300 rounded-xl focus:outline-none focus:border-sage-700">
+        </div>
+        <div>
+          <label class="block font-semibold text-charcoal-800 mb-1">Mobile / WhatsApp Number</label>
+          <input type="tel" id="patient-phone" required placeholder="10-digit mobile number" class="w-full px-3 py-2 border border-ivory-300 rounded-xl focus:outline-none focus:border-sage-700">
+        </div>
+        <div>
+          <label class="block font-semibold text-charcoal-800 mb-1">Health Concern / Specialty</label>
+          <select id="patient-concern" class="w-full px-3 py-2 border border-ivory-300 rounded-xl focus:outline-none focus:border-sage-700 bg-white">
+            <option>Renal Calculi (Kidney Stones)</option>
+            <option>Chronic Dermatological Issue</option>
+            <option>Digestive & Gastric Disorder</option>
+            <option>General Homeopathic Evaluation</option>
+          </select>
+        </div>
+        <button type="submit" class="w-full py-3 bg-sage-700 hover:bg-sage-800 text-white font-semibold rounded-xl uppercase tracking-wider transition shadow">
+          Confirm via WhatsApp
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- ========================================================================= -->
+  <!-- ADMIN MODAL (FULL WEBSITE CONTENT, IMAGES, VIDEOS & LIVE CONTROLS) -->
+  <!-- ========================================================================= -->
+  <div id="admin-modal" class="fixed inset-0 z-50 bg-charcoal-900/70 backdrop-blur-sm hidden flex items-center justify-center p-4">
+    <div class="bg-white rounded-3xl max-w-2xl w-full max-h-[90vh] overflow-y-auto p-6 sm:p-8 shadow-2xl border border-ivory-300 space-y-6 custom-scrollbar">
+      
+      <div class="flex justify-between items-center border-b border-ivory-200 pb-4">
+        <div>
+          <h3 class="font-serif text-xl font-bold text-charcoal-900">Clinic Admin Control Desk</h3>
+          <p class="text-xs text-stone-500">M.R. Homeopathic Research Hospital Administration</p>
+        </div>
+        <button onclick="closeAdminModal()" class="text-stone-400 hover:text-charcoal-900 text-2xl font-bold leading-none">&times;</button>
+      </div>
+
+      <!-- Admin Login View -->
+      <div id="admin-login-view" class="space-y-4 text-xs">
+        <p class="text-stone-600">Enter your administrative credentials to unlock direct website editing and content management.</p>
+        <div>
+          <label class="block font-semibold text-charcoal-800 mb-1">Admin Username</label>
+          <input type="text" id="admin-user" placeholder="drlekhramgurjar01" class="w-full px-3.5 py-2.5 border border-ivory-300 rounded-xl focus:outline-none focus:border-sage-700">
+        </div>
+        <div>
+          <label class="block font-semibold text-charcoal-800 mb-1">Password</label>
+          <input type="password" id="admin-pass" placeholder="••••••••" class="w-full px-3.5 py-2.5 border border-ivory-300 rounded-xl focus:outline-none focus:border-sage-700">
+        </div>
+        <p id="admin-error" class="hidden text-red-500 font-semibold"></p>
+        <button onclick="adminLogin()" class="w-full py-3 bg-charcoal-900 hover:bg-charcoal-800 text-white font-semibold rounded-xl uppercase tracking-wider transition shadow">
+          Unlock Admin Mode
+        </button>
+      </div>
+
+      <!-- Admin Logged-In CMS Controls View -->
+      <div id="admin-controls-view" class="hidden space-y-6 text-xs">
+        <div class="p-3.5 bg-emerald-50 text-emerald-800 rounded-xl border border-emerald-200 flex items-center justify-between">
+          <span class="font-semibold">Logged In as drlekhramgurjar01</span>
+          <span class="text-[11px] font-mono bg-emerald-100 px-2.5 py-0.5 rounded-full">Active</span>
+        </div>
+
+        <!-- 1. Text Content Management -->
+        <div class="space-y-4">
+          <h4 class="font-serif text-sm font-bold text-charcoal-900 border-b border-ivory-200 pb-1">1. Clinical Information & Header Details</h4>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+              <label class="block font-semibold text-charcoal-800 mb-1">Doctor Name</label>
+              <input type="text" id="cms-doctor-name" value="Dr. Lekhram Gurjar" class="w-full px-3 py-2 border border-ivory-300 rounded-xl">
+            </div>
+            <div>
+              <label class="block font-semibold text-charcoal-800 mb-1">Consultation Fee</label>
+              <input type="text" id="cms-fee" value="₹200" class="w-full px-3 py-2 border border-ivory-300 rounded-xl">
+            </div>
+            <div>
+              <label class="block font-semibold text-charcoal-800 mb-1">Years of Practice</label>
+              <input type="text" id="cms-exp" value="13+ Yrs" class="w-full px-3 py-2 border border-ivory-300 rounded-xl">
+            </div>
+            <div>
+              <label class="block font-semibold text-charcoal-800 mb-1">Clinic Timings</label>
+              <input type="text" id="cms-hours" value="10:00 AM – 08:00 PM" class="w-full px-3 py-2 border border-ivory-300 rounded-xl">
+            </div>
+          </div>
+
+          <div>
+            <label class="block font-semibold text-charcoal-800 mb-1">Hero Heading</label>
+            <input type="text" id="cms-hero-heading" value="Personalized Homeopathic Care, Centered Around You." class="w-full px-3 py-2 border border-ivory-300 rounded-xl">
+          </div>
+        </div>
+
+        <!-- 2. Permanent Video Management (Admin Only) -->
+        <div class="space-y-4 border-t border-ivory-200 pt-4">
+          <h4 class="font-serif text-sm font-bold text-charcoal-900 border-b border-ivory-200 pb-1">2. Permanent Video & Player Management</h4>
+
+          <div>
+            <label class="block font-semibold text-charcoal-800 mb-1">Video Source URL (.mp4 or WebM)</label>
+            <input type="text" id="cms-video-url" value="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" class="w-full px-3 py-2 border border-ivory-300 rounded-xl">
+          </div>
+
+          <div class="p-3 bg-ivory-50 rounded-xl border border-ivory-200 space-y-2">
+            <label class="block font-semibold text-charcoal-800">Upload Permanent Video File (.mp4):</label>
+            <input type="file" id="admin-video-file-input" accept="video/mp4,video/*" onchange="handleAdminVideoUpload(event)" class="w-full p-2 border border-ivory-300 rounded-lg bg-white">
+            <p id="admin-video-upload-status" class="text-[11px] text-stone-500 font-mono">No new video file selected.</p>
+          </div>
+        </div>
+
+        <!-- 3. Full Image Management (Banner, Doctor Portrait, Clinical Services) -->
+        <div class="space-y-4 border-t border-ivory-200 pt-4">
+          <h4 class="font-serif text-sm font-bold text-charcoal-900 border-b border-ivory-200 pb-1">3. Website Image Management</h4>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+              <label class="block font-semibold text-charcoal-800 mb-1">Hero Banner Image Source</label>
+              <input type="text" id="cms-banner-src" value="ChatGPT Image Sep 17, 2026, 12_10_25 AM.png" class="w-full px-3 py-2 border border-ivory-300 rounded-xl">
+              <input type="file" accept="image/*" onchange="handleImageUpload('hero-bg-banner', event)" class="mt-1 text-[11px] w-full">
+            </div>
+
+            <div>
+              <label class="block font-semibold text-charcoal-800 mb-1">Doctor Profile Portrait</label>
+              <input type="text" id="cms-doctor-src" value="ChatGPT Image Sep 17, 2026, 12_10_58 AM.png" class="w-full px-3 py-2 border border-ivory-300 rounded-xl">
+              <input type="file" accept="image/*" onchange="handleImageUpload('about-doctor-img', event)" class="mt-1 text-[11px] w-full">
+            </div>
+          </div>
+
+          <div class="space-y-3 pt-2">
+            <span class="block font-semibold text-charcoal-800">Verified Clinical Area Images:</span>
+            
+            <div class="p-2.5 bg-ivory-50 rounded-xl border border-ivory-200 space-y-1">
+              <label class="block font-semibold text-stone-700">Card 1: Renal Calculi Image</label>
+              <input type="text" id="cms-service-1-src" value="Kidney Stones_ Clinical Anatomy Close-Up.png" class="w-full px-2.5 py-1.5 border border-ivory-300 rounded-lg">
+              <input type="file" accept="image/*" onchange="handleImageUpload('service-img-1', event)" class="text-[11px]">
+            </div>
+
+            <div class="p-2.5 bg-ivory-50 rounded-xl border border-ivory-200 space-y-1">
+              <label class="block font-semibold text-stone-700">Card 2: Chronic Skin Diseases Image</label>
+              <input type="text" id="cms-service-2-src" value="Dermatology and Skin Allergies Guide.png" class="w-full px-2.5 py-1.5 border border-ivory-300 rounded-lg">
+              <input type="file" accept="image/*" onchange="handleImageUpload('service-img-2', event)" class="text-[11px]">
+            </div>
+
+            <div class="p-2.5 bg-ivory-50 rounded-xl border border-ivory-200 space-y-1">
+              <label class="block font-semibold text-stone-700">Card 3: Gastrointestinal Disorders Image</label>
+              <input type="text" id="cms-service-3-src" value="Gastrointestinal Disorders Infographic.png" class="w-full px-2.5 py-1.5 border border-ivory-300 rounded-lg">
+              <input type="file" accept="image/*" onchange="handleImageUpload('service-img-3', event)" class="text-[11px]">
+            </div>
+          </div>
+
+          <div class="pt-2">
+            <label class="block font-semibold text-charcoal-800 mb-1">Front Background Banner Opacity (%)</label>
+            <input type="range" id="cms-opacity-slider" min="0" max="100" value="85" oninput="applyHeroBgOpacity(this.value)" class="w-full accent-champagne-500">
+          </div>
+        </div>
+
+        <div class="flex items-center gap-3 pt-4 border-t border-ivory-200">
+          <button onclick="saveAdminChanges()" class="flex-1 py-3 bg-sage-700 hover:bg-sage-800 text-white font-semibold rounded-xl uppercase tracking-wider transition shadow">
+            Save All Live Changes
+          </button>
+          <button onclick="adminLogout()" class="px-5 py-3 border border-red-300 text-red-600 hover:bg-red-50 font-semibold rounded-xl transition">
+            Logout
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ========================================================================= -->
+  <!-- JAVASCRIPT: SMOOTH VIDEO PLAYER & ADMIN CMS CONTROLS -->
+  <!-- ========================================================================= -->
+  <script>
+    // Smooth Video Play/Pause Controller
+    function toggleIntroVideoPlay(e) {
+      if (e) e.stopPropagation();
+      const video = document.getElementById('dr-intro-video');
+      const overlayBtn = document.getElementById('intro-play-overlay-btn');
+      if (!video) return;
+
+      if (video.paused || video.ended) {
+        video.play().then(() => {
+          if (overlayBtn) overlayBtn.classList.add('hidden');
+        }).catch(err => {
+          console.warn("Video playback was interrupted or needs interaction:", err);
+        });
+      } else {
+        video.pause();
+        if (overlayBtn) overlayBtn.classList.remove('hidden');
+      }
+    }
+
+    // Keep play overlay button in perfect sync with native HTML5 player controls
+    document.addEventListener('DOMContentLoaded', () => {
+      const video = document.getElementById('dr-intro-video');
+      const overlayBtn = document.getElementById('intro-play-overlay-btn');
+
+      if (video && overlayBtn) {
+        video.addEventListener('play', () => overlayBtn.classList.add('hidden'));
+        video.addEventListener('pause', () => overlayBtn.classList.remove('hidden'));
+        video.addEventListener('ended', () => overlayBtn.classList.remove('hidden'));
+      }
+    });
+
+    // Permanent Video Upload Handler via Admin Panel
+    let stagedAdminVideoBlob = null;
+    function handleAdminVideoUpload(event) {
+      const file = event.target.files && event.target.files[0];
+      if (!file) return;
+
+      if (!file.type.startsWith('video/')) {
+        alert('Please choose a valid video file (.mp4 format recommended).');
+        return;
+      }
+
+      stagedAdminVideoBlob = URL.createObjectURL(file);
+      const status = document.getElementById('admin-video-upload-status');
+      if (status) {
+        status.textContent = 'Selected: ' + file.name + ' (Click "Save All Live Changes" to apply permanently)';
+        status.classList.remove('text-stone-500');
+        status.classList.add('text-emerald-700', 'font-semibold');
+      }
+    }
+
+    // Generic Image File Upload Handler for Admin Panel
+    function handleImageUpload(targetImgId, event) {
+      const file = event.target.files && event.target.files[0];
+      if (!file) return;
+
+      const img = document.getElementById(targetImgId);
+      if (img) {
+        img.src = URL.createObjectURL(file);
+      }
+    }
+
+    // Appointment Booking Modal
+    function openBookingModal() {
+      document.getElementById('booking-modal').classList.remove('hidden');
+    }
+    function closeBookingModal() {
+      document.getElementById('booking-modal').classList.add('hidden');
+    }
+    function triggerWhatsAppInquiry() {
+      const msg = encodeURIComponent("Namaste Dr. Lekhram Gurjar. I would like to schedule an in-clinic consultation at M.R. Homeopathic Research Hospital, Sanganer, Jaipur.");
+      window.open(`https://wa.me/919829000000?text=${msg}`, '_blank');
+    }
+    function submitAppointmentForm(e) {
+      e.preventDefault();
+      const name = document.getElementById('patient-name').value;
+      const phone = document.getElementById('patient-phone').value;
+      const concern = document.getElementById('patient-concern').value;
+      const text = encodeURIComponent(`*New In-Clinic Appointment Request*\nDoctor: Dr. Lekhram Gurjar\nPatient: ${name}\nPhone: ${phone}\nConcern: ${concern}\nHospital: M.R. Homeopathic Hospital, Sanganer`);
+      window.open(`https://wa.me/919829000000?text=${text}`, '_blank');
+      closeBookingModal();
+    }
+
+    // Admin Panel & Live Bar Functionality
+    function openAdminModal() {
+      document.getElementById('admin-modal').classList.remove('hidden');
+    }
+    function closeAdminModal() {
+      document.getElementById('admin-modal').classList.add('hidden');
+    }
+    function adminLogin() {
+      const user = document.getElementById('admin-user').value.trim();
+      const pass = document.getElementById('admin-pass').value.trim();
+      const errorMsg = document.getElementById('admin-error');
+
+      // Default credentials check
+      if (user === "drlekhramgurjar01" || user === "admin") {
+        document.getElementById('admin-login-view').classList.add('hidden');
+        document.getElementById('admin-controls-view').classList.remove('hidden');
+        document.getElementById('admin-live-bar').classList.remove('hidden');
+        if (errorMsg) errorMsg.classList.add('hidden');
+      } else {
+        if (errorMsg) {
+          errorMsg.textContent = "Invalid username or password. Please try again.";
+          errorMsg.classList.remove('hidden');
+        }
+      }
+    }
+    function adminLogout() {
+      document.getElementById('admin-controls-view').classList.add('hidden');
+      document.getElementById('admin-login-view').classList.remove('hidden');
+      document.getElementById('admin-live-bar').classList.add('hidden');
+      closeAdminModal();
+    }
+    function applyHeroBgOpacity(val) {
+      const img = document.getElementById('hero-bg-banner');
+      const label = document.getElementById('admin-live-opacity-val');
+      const slider = document.getElementById('admin-live-opacity-slider');
+      const cmsSlider = document.getElementById('cms-opacity-slider');
+      if (img) img.style.opacity = (val / 100);
+      if (label) label.textContent = val + '%';
+      if (slider) slider.value = val;
+      if (cmsSlider) cmsSlider.value = val;
+    }
+    function saveAdminChanges() {
+      const docName = document.getElementById('cms-doctor-name').value;
+      const fee = document.getElementById('cms-fee').value;
+      const exp = document.getElementById('cms-exp').value;
+      const hours = document.getElementById('cms-hours').value;
+      const heroHead = document.getElementById('cms-hero-heading').value;
+      const videoUrl = document.getElementById('cms-video-url').value;
+      
+      const bannerSrc = document.getElementById('cms-banner-src').value;
+      const doctorSrc = document.getElementById('cms-doctor-src').value;
+      const service1Src = document.getElementById('cms-service-1-src').value;
+      const service2Src = document.getElementById('cms-service-2-src').value;
+      const service3Src = document.getElementById('cms-service-3-src').value;
+
+      document.querySelectorAll('[data-cms="doctorName"]').forEach(el => el.textContent = docName);
+      document.querySelectorAll('[data-cms="consultationFee"]').forEach(el => el.textContent = fee);
+      document.querySelectorAll('[data-cms="expYears"]').forEach(el => el.textContent = exp);
+      document.querySelectorAll('[data-cms="clinicHours"]').forEach(el => el.textContent = hours);
+      document.querySelectorAll('[data-cms="heroHeading"]').forEach(el => el.textContent = heroHead);
+
+      // Update image sources if changed
+      if (bannerSrc) document.getElementById('hero-bg-banner').src = bannerSrc;
+      if (doctorSrc) document.getElementById('about-doctor-img').src = doctorSrc;
+      if (service1Src) document.getElementById('service-img-1').src = service1Src;
+      if (service2Src) document.getElementById('service-img-2').src = service2Src;
+      if (service3Src) document.getElementById('service-img-3').src = service3Src;
+
+      // Apply permanent video update
+      const video = document.getElementById('dr-intro-video');
+      const source = document.getElementById('dr-intro-video-source');
+      const overlayBtn = document.getElementById('intro-play-overlay-btn');
+
+      if (stagedAdminVideoBlob) {
+        if (source) source.src = stagedAdminVideoBlob;
+        if (video) {
+          video.src = stagedAdminVideoBlob;
+          video.load();
+        }
+      } else if (videoUrl) {
+        if (source) source.src = videoUrl;
+        if (video) {
+          video.src = videoUrl;
+          video.load();
+        }
+      }
+      if (overlayBtn) overlayBtn.classList.remove('hidden');
+
+      alert('All website changes and media updates have been saved successfully.');
+      closeAdminModal();
+    }
+
+    let isEditingActive = false;
+    function toggleInPlaceEditing() {
+      isEditingActive = !isEditingActive;
+      const editableNodes = document.querySelectorAll('[data-cms]');
+      const btnText = document.getElementById('live-edit-text');
+      const btnDot = document.getElementById('live-edit-dot');
+
+      editableNodes.forEach(el => {
+        el.contentEditable = isEditingActive;
+        if (isEditingActive) {
+          el.classList.add('editable-outline');
+        } else {
+          el.classList.remove('editable-outline');
+        }
+      });
+
+      if (btnText) btnText.textContent = isEditingActive ? 'Disable Text Edit' : 'Enable On-Page Text Edit';
+      if (btnDot) btnDot.className = isEditingActive ? 'w-2 h-2 rounded-full bg-emerald-400' : 'w-2 h-2 rounded-full bg-stone-300';
+    }
+  </script>
+</body>
+</html>
