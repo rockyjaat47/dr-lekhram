@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!--
+    Dr. Lekhram Gurjar | M.R. Homeopathic Research Hospital, Sanganer, Jaipur
+    This website is a single page. Its sections (About, Intro Video, Clinical Areas,
+    Reviews, Reels & Videos, Location) are all on this one URL, so only one entry is needed.
+    IMPORTANT: replace https://www.yourdomain.com/ with your real website address.
+  -->
+  <url>
+    <loc>https://www.yourdomain.com/</loc>
+    <lastmod>2026-11-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+</urlset>

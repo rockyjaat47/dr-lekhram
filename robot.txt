@@ -1,0 +1,7 @@
+# robots.txt for Dr. Lekhram Gurjar | M.R. Homeopathic Research Hospital
+# Allow all search engines to crawl the whole website
+User-agent: *
+Allow: /
+
+# IMPORTANT: replace yourdomain.com with your real website address
+Sitemap: https://www.yourdomain.com/sitemap.xml
